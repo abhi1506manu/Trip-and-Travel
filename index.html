@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--menu-bar----------------------------------------->
+    <nav>
+      <div class="navigation" id="navi">
+        <!--logo------------>
+        <h1>Trip and Travel</h1>
+        <!--menu----------------->
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li class="shop"><a href="#book">Book</a></li>
+          <li><a href="#packages">Package</a></li>
+          <li><a href="#gallary">Gallary</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <!--right-menu----------->
+        <div class="right-menu">
+          <a href="javascript:void(0);" class="search">
+            <i class="fas fa-search"></i>
+        </a>
+        <a href="#" class="user">
+            <i class="far fa-user"></i>
+        </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ************LOGIN FORM************ -->
+    <div class="form" id="form">
+      <!--login---------->
+      <div class="login-form" id="logi">
+          <!--cancel-btn---------------->
+          <a href="#" class="form-cancel">
+              <i class="fas fa-times"></i>
+          </a>
+          <strong>Log In</strong>
+          <!--inputs-->
+          <form>
+              <input type="email" name="email" placeholder="Example@gmail.com" required />
+              <input type="password" name="password" placeholder="Password" required />
+              <input type="submit" value="Log In" />
+          </form>
+          <div class="form-btns">
+            <a href="#" class="forget">Forget Your Password?</a>
+                <a href="javascript:void(0);" class="sign-up-btn">Create Account</a>
+        </div>
+      </div>
+      <!-- **********SIGN UP********** -->
+      <div class="sign-up-form">
+        <!--cancel-btn---------------->
+        <a href="javascript:void(0);" class="form-cancel">
+            <i class="fas fa-times"></i>
+        </a>
+        <strong>Sign Up</strong>
+        <!--inputs-->
+        <form>
+            <input type="text" name="fullname" placeholder="Full Name" required />
+            <input type="email" name="email" placeholder="Example@gmail.com" required />
+            <input type="password" name="password" placeholder="Password" required />
+            <input type="submit" value="Sign Up" />
+        </form>
+        <!--forget-and-sign-up-btn-->
+        <div class="form-btns">
+            <a href="javascript:void(0);" class="already-account">
+                Already Have Account?</a>
+        </div>
+ </div>
+
+</div>
+    <!-- IMAGE HOME PAGE -->
+    <div class="himage">
+      <img src="images/to5.jpg" alt="tour" />
+    </div>
+
+    <!-- ***********BOOK PACKAGE********* -->
+    <section class="book" id="book">
+      <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+      </h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="images/book-img.svg" alt="" />
+        </div>
+
+        <form action="">
+          <div class="inputBox">
+            <h3>where to</h3>
+            <input type="text" placeholder="place name" />
+          </div>
+          <div class="inputBox">
+            <h3>how many</h3>
+            <input type="number" placeholder="number of guests" />
+          </div>
+          <div class="inputBox">
+            <h3>arrivals</h3>
+            <input type="date" />
+          </div>
+          <div class="inputBox">
+            <h3>leaving</h3>
+            <input type="date" />
+          </div>
+          <input type="submit" class="btn" value="book now" />
+        </form>
+      </div>
+    </section>
+
+    <!-- *****************Package*********** -->
+    <Section>
+    <div class="packages" id="packages">
+      <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+      </h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="images/to6.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> Mumbai</h3>
+            <p>Budham sharanam gachhami</p>
+            <div class="price">$90.00 <span>$120.00</span></div>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/to12.webp" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> hawaii</h3>
+            <p>Lorem</p>
+            <div class="price">$90.00 <span>$120.00</span></div>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/to13.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> sydney</h3>
+            <p>Lorem</p>
+            <div class="price">$90.00 <span>$120.00</span></div>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="images/to7.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> hawaii</h3>
+            <p>Lorem</p>
+            <div class="price">$90.00 <span>$120.00</span></div>
+            <a href="#" class="btn">book now</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </Section>
+
+
+<!-- *********************Gallary************ -->
+    <div class="gal" id="gallary">
+      <h1 class="heading">
+        <span>G</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+      </h1>
+      <div class="Gallery">
+        <div class="photo">
+          <img src="images/to1.jfif" alt="" />
+        </div>
+
+        <div class="photo">
+          <img src="images/to2.jpg" alt="" />
+        </div>
+
+        <div class="photo">
+          <img src="images/to3.jpg" alt="" />
+        </div>
+
+        <div class="photo">
+          <img src="images/to4.jpg" alt="" />
+        </div>
+
+        <div class="photo">
+          <img src="images/to5.jpg" alt="" />
+        </div>
+
+        <div class="photo">
+          <img src="images/to7.jpg" alt="" />
+        </div>
+
+        <div class="photo">
+          <img src="images/to14.jpg" alt="" />
+        </div>
+
+        <div class="photo">
+          <img src="images/to8.jpg" alt="" />
+        </div>
+
+        <div class="photo">
+          <img src="images/to9.jpg" alt="" />
+        </div>
+        .
+
+        <div class="photo">
+          <img src="images/to13.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- *************** FOOTER ************ -->
+    <div class="footer" id="contact">
+      <h1>Design By</h1>
+      <li>Abhimanyu Kumar <span>(190310007002)</span></li>
+      <li>Shubhranil Ghosh <span>(190310007048)</span></li>
+      <div class="soicon">
+        <i class=" fab fa-instagram  so-icon"></i>
+        <i class="fab fa-github  so-icon"></i>
+        <i class="fab fa-twitter-square  so-icon"></i>
+        <i class="fab fa-linkedin  so-icon"></i>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
