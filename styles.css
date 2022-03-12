@@ -7,9 +7,14 @@
  ul{
      list-style: none;
  }
- .navigation a{
+ a{
      text-decoration: none;
  } 
+ nav{
+   position:fixed;
+  
+   top:0; left: 0; right:0;
+ }
  .navigation{
   background:#333;
      display: flex;
@@ -37,21 +42,24 @@
  .menu li a{
   color:#fff;
  }
+
  .right-menu{
      margin: 0px 10px;
      font-size: 1.2rem;
  }
- .right-menu .fas{
+ .right-menu .fas,.far{
    /* margin-right: 10px; */
    padding: 10px;
  }
  .right-menu a{
    color:#fff;
  }
+
+
  .menu a:hover,
  .right-menu a:hover
  {
-     color:#fff;
+     color:orange;
      transition: all ease 0.3s;
  }
  
@@ -109,7 +117,7 @@
   height: 45px;
   margin: 6px 0px;
   padding: 0px 10px;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgb(21 19 19 / 66%);
   outline: none;
   border-radius: 7px;
 }
@@ -119,7 +127,7 @@
 }
 .login-form input[type="submit"],
 .sign-up-form input[type="submit"]{
-  background-color: #0b9d8a;
+  background-color: orange;
   color: #ffffff;
   border: none;
   outline: none;
@@ -127,6 +135,14 @@
   margin-top: 10px;
   border-radius: 3px;
   box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+.login-form input[type="submit"]:hover{
+  background-color:hsl(39, 90%, 48%);
+}
+.sign-up-form input[type="submit"]:hover{
+  background-color:hsl(39, 90%, 48%);
+
 }
 .form-btns{
   width: 90%;
@@ -167,9 +183,46 @@
 }
 
 .himage img{
+  /* background-image: url("images/himg2.jpg"); */
+  /* background-repeat: no-repeat; */
     width: 100%;
-    height: 700px;
+    height: 600px;
 }
+.explore{
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  color: #fff;
+  text-shadow: 2px 2px 4px green;
+}
+.explore_sec{
+  position: absolute;
+  top:250px;
+  left: 60px;
+  margin-top: 5px;
+  color: #fff;
+  text-shadow: 2px 2px 4px green;
+}
+
+/* .explore{
+
+  color: #fff;
+  position: relative;
+  top:200px;
+  margin-left:50px;
+  font-size: 60px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.explore_sec{
+  z-index:5;
+  color: #fff;
+  position: relative;
+  top:150px;
+  margin-left:60px;
+  font-size: 60px;
+  text-shadow: 2px 2px 4px green;
+} */
 
 /* *********Book Now**************** */
 section{
@@ -177,7 +230,7 @@ section{
   }
   .heading{
     text-align: center;
-    padding:1rem 0
+  
   }
   
   .heading span{
@@ -200,7 +253,7 @@ section{
   }
   
   .book .row .image{
-    flex:1 1 40rem;
+    flex:1 1 33rem;
   }
   
   .book .row .image img{
@@ -208,8 +261,8 @@ section{
   }
   
   .book .row form{
-    flex:1 1 40rem;
-    padding:1.5rem;
+    flex:1 1 35rem;
+    padding:1.2rem;
     box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
     border-radius: .5rem;
   }
@@ -228,26 +281,62 @@ section{
   }
   
   .book .row form .inputBox h3{
-    font-size: 1.5rem;
+    font-size: 1rem;
     color:#666;
-    margin-top:10px;
-    margin-bottom: 10px;
+    margin-top:5px;
+    margin-bottom: 5px;
 
   }
 
   .btn{
     display: inline-block;
-    margin-top: 1rem;
+    margin-top: 12px;
     background:orange;
     color:#fff;
-    padding:.4rem 2rem;
-    border:.2rem solid orange;
+    padding:.3rem 1.2rem;
+    border:1px solid orange;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 15px;
   }
 
   .btn:hover{
-    background-color: rgb(226, 212, 15);
+    background-color: rgb(241, 178, 59);
+  }
+
+
+  /********Service*********/
+  .services .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+  }
+  
+  .services .box-container .box{
+    flex: 1 1 15rem;
+    border-radius: .5rem;
+    padding:1rem;
+    text-align: center;
+  }
+  
+  .services .box-container .box i{
+    padding:5px;
+    font-size: 2.5rem;
+    color:orange;
+  }
+  
+  .services .box-container .box h3{
+    font-size: 1rem;
+    color:#333;
+  }
+  
+  .services .box-container .box p{
+    font-size: 1rem;
+    color:#666;
+  }
+  
+  .services .box-container .box{
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
   }
 
   /* **************Gallery************ */
@@ -278,6 +367,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     gap:1rem;
+    margin-top:25px;
   }
   
   .packages .box-container .box{
@@ -305,6 +395,7 @@ section{
   
   .packages .box-container .box .content h3 i{
     color:rgb(248, 58, 89);
+    margin-right: 5px;
   }
   
   .packages .box-container .box .content p{
@@ -343,3 +434,5 @@ section{
     font-size: 30px;
     
   }
+
+  .error {color: #FF0001;}  
